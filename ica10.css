@@ -10,3 +10,29 @@
     transform: rotate(15deg);
     width: 120px;
 }
+.quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.6;
+}
+.quote-box blockquote {
+    margin: 0;
+    padding: 0;
+}
+.quote-box blockquote span {
+    display: inline-block;
+    background-image: linear-gradient(90deg, red, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+.quote-box:hover blockquote span {
+    background-size: 100% 3px;
+}
