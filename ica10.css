@@ -62,3 +62,38 @@
     background-color: hsl(200, 70%, 50%);
     animation: moveBox4 5s infinite ease-in-out;
 }
+.notification {
+    position: fixed;
+    bottom: 20px; 
+    right: -300px; 
+    width: 250px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0; 
+    transition: transform 1s ease, opacity 1s ease;
+    animation: scrollIn 10s infinite; 
+}
+
+@keyframes scrollIn {
+    0% {
+        right: -300px; 
+        opacity: 0;
+    }
+    20% {
+        right: 20px; 
+        opacity: 1;
+    }
+    80% {
+        right: 20px; 
+        opacity: 1;
+    }
+    100% {
+        right: -300px; 
+        opacity: 0;
+    }
+}
