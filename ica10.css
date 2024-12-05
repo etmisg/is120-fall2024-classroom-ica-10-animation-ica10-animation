@@ -36,3 +36,29 @@
 .quote-box:hover blockquote span {
     background-size: 100% 3px;
 }
+@keyframes moveBox4 {
+    0% {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    25% {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    50% {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    75% {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    100% {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+.box-4 {
+    background-color: hsl(200, 70%, 50%);
+    animation: moveBox4 5s infinite ease-in-out;
+}
