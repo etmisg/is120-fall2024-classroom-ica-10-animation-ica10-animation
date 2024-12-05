@@ -1,1 +1,12 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+.logo img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.logo img:hover {
+    transform: rotate(15deg);
+    width: 120px;
+}
