@@ -117,3 +117,18 @@
         background-image: linear-gradient(45deg, purple, pink);
     }
 }
+.rotating-svg {
+    animation: rotateText 10s linear infinite;
+    transform-origin: center;
+    display: block;
+    margin: auto;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

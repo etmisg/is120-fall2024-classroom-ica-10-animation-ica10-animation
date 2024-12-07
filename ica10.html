@@ -23,17 +23,17 @@
             <section id="grid-wrapper">
                 <div class="center-grid">
                     <div class="box box-1">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="rotating-svg">
                             <path
                                 id="circlePath"
                                 fill="none"
                                 stroke-width="4"
                                 stroke="hsl(0 100% 50% / 0.5)"
                                 d="
-                    M 10, 50
-                    a 40,40 0 1,1 80,0
-                    a 40,40 0 1,1 -80,0
-                  "
+                                    M 10, 50
+                                    a 40,40 0 1,1 80,0
+                                    a 40,40 0 1,1 -80,0
+                                "
                             />
                             <text
                                 id="text"
@@ -43,11 +43,23 @@
                                 fill="var(--text-1)"
                             >
                                 <textPath id="textPath" href="#circlePath">
-                                    Your text goes here!
+                                    Your Text Goes Here!
                                 </textPath>
                             </text>
+
+                            <!-- Centered text -->
+                            <text
+                                x="50" y="50"
+                                text-anchor="middle"
+                                dominant-baseline="middle"
+                                font-family="monospace"
+                                font-size="8"
+                                fill="var(--text-1)"
+                            >
+                                Task 6
+                            </text>
                         </svg>
-                    </div>
+                    </div>           
                     <div class="box box-2 quote-box">
                         <blockquote>
                             <span>"The only thing we</span><br />
